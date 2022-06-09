@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TU DÍA ESPECIAL</title>
+    <link rel="stylesheet" href="./css/cssBoot.css">
+    <link rel="stylesheet" href="./css/cssMain.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1 style="text-align: center; padding: 1%; font-size: 3em;">FELIZ CUMPLEAÑOS!!❤️</h1>
+    <hr>
+    <div class="position-absolute top-50 start-50 translate-middle">  
+        <a class="btn btn-danger" data-bs-toggle="modal" href="#exampleModalToggle" role="button" id="idB">Empezar juego</a>
+    </div>
+    <!--Ventana modal-->
+    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalToggleLabel">FELIZ CUMPLEAÑOS</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onClick="empezar()"></button>
+            </div>
+            <div class="modal-body">
+              Reina... Para llegar a lo que te quiero decir, tienes que responder a unas preguntitas para asegurarme que eres tu. <br> Te quiero ❤
+            </div>
+          </div>
+        </div>
+    </div>
+    
+    <!--Caja del medio con preguntas to flamas-->
+    <div id="caja" hidden> 
+        <div class="position-absolute top-50 start-50 translate-middle text-center">
+                <div class="col-12">
+                    <h3 id="id2">1.Tenemos un día pendiente... ¿Donde?</h3>
+                    <div class="col-12 mx-auto" style="padding-top: 3%;">
+                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="id1">
+                        <button type="button" class="btn btn-dark" style="margin-top: 3%; position: relative; align-items: center;" onClick="mostrarMensaje()">Responde!</button>
+                    </div>
+                </div>
+        </div>
+    </div>
+ 
+    <!--Caja final-->
+    <div id="caja2" hidden> 
+        <div class="position-absolute top-50 start-50 translate-middle">
+            <a href="txt/inaki.txt" ><img src="https://drive.google.com/uc?export=view&id=1Y-LOBpmblrWAmgVlrIqxd19DDBcEnjWd" class="rounded" alt="..." style="box-shadow: 10px 10px 20px black; width: 100%; height: 100%;"></a>
+        </div>
+    </div>
+    <br>
+    <br>
+    <h1 id="txtFinal" hidden style="position:relative;margin-top:100%;width:200px;margin-left: calc(50% - 100px);">Pincha en la foto... ❤</h1>
+</body>
+<script src="js/prueba.js"></script>
+</html> 
